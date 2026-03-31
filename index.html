@@ -162,7 +162,7 @@ for(let i=0; i<90; i++) {
     let material = new THREE.MeshBasicMaterial({ map: texture, transparent: true, side: THREE.DoubleSide });
     let pic = new THREE.Mesh(geometry, material);
 
-    originalData.set(pic, { scale: pic.scale.clone(), position: pic.position.clone(), rotation: pic.rotation.clone(), speed: 0.06 + Math.random()*0.06 });
+    originalData.set(pic, { scale: pic.scale.clone(), position: pic.position.clone(), rotation: pic.rotation.clone(), speed: 0.1 + Math.random()*0.06 });
     pic.rotX = (Math.random()-0.5)*0.02;
     pic.rotY = (Math.random()-0.5)*0.02;
     pic.rotZ = (Math.random()-0.5)*0.02;
