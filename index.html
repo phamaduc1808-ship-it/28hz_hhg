@@ -2,7 +2,7 @@
 <html lang="vi">
 <head>
 <meta charset="UTF-8">
-<title>28hz_hhg_28122007 - Neon Version</title>
+<title>hz_hhg_122007 - Neon Version</title>
 <style>
     body { margin: 0; overflow: hidden; background: black; }
 
@@ -51,7 +51,7 @@
         position: fixed;
         top: 50px;
         right: 80px;
-        width: 280px;
+        width: 0px;
         max-width: 70%;
         padding: 20px;
         background: linear-gradient(135deg, #fff 60%, #FFC0CB 100%);
@@ -104,7 +104,7 @@
         là 0h48p ngày 18/3, cũng code xong r nhma t kh gửi m luôn dc cxuc kiểu xa lạ quá, cũng cảm thấy sợ luôn ý, sợ theo nghĩa đen luôn kh hiểu sao nữa, 
         chắc là do vẫn còn tcam, đến bao giờ tcam ít dần đi t nghĩ là sẽ kh còn sợ m nữa, lúc ý t sẽ gửi m.
         Đọc xong thì cho t biết m dạo này nnao cho t bớt tò mò kh:), nếu dc cứ nhắn mess nhé. 
-        Nhớ dc thì mở bl tiktok t, còn bó hoa hướng dương bằng len của m nữa đây này kh biết đưa sao, mai gặp kh t đưa kh t đi qsu mất, 24/4 mới về. T chẳng quan tâm qkhu nnao đâu nên nếu
+        Nhớ dc thì mở bl tiktok t, còn bó hoa hướng dương bằng len của m nữa đây này kh biết đưa sao, mai gặp kh t đưa kh t đi qsu mất, t cũng kh muốn để ở nhà nữa, 24/4 mới về. T chẳng quan tâm qkhu nnao đâu nên nếu
         dc thì cứ như bth nhé. Xin lỗi cu nhiều nhé, làm phiền suốt. Vậy nhá, pp, t phiền vl:))
     </p>
     <button id="closeLetter">Đóng</button>
@@ -116,8 +116,8 @@
 </audio>
 
 <!-- Three.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/controls/OrbitControls.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r1/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/three@0.1/examples/js/controls/OrbitControls.js"></script>
 
 <script>
 // === 1. Khởi tạo Scene ===
@@ -220,8 +220,8 @@ hearts.push(heart);
 
 // === 5. CHỮ RƠI NEON ===
 let fallingTexts = [];
-const words = ["28hz", "HHG", "28.12.2007", "nhớ t khong", "nhớ m quá cu", "happy nhe",
-    "bỏ bl tiktok t","dangiu","di choi kh","lấy hoa kh"
+const words = ["hz", "HHG", ".12.2007", "nhớ t khong", "nhớ m quá cu", "happy nhe",
+    "bỏ bl tiktok t","dangiu","di choi kh","lấy hoa kh","xin loi nhe"
 ]; 
 const neonColors = [
     { text: '#FFFF00', glow: '#FFFF00' }, { text: '#FF00FF', glow: '#FF00FF' }, 
@@ -231,7 +231,7 @@ const neonColors = [
 function createNeonText(text, colorSet) {
     const canvas = document.createElement('canvas');
     const ctx = canvas.getContext('2d');
-    canvas.width = 512; canvas.height = 128;
+    canvas.width = 512; canvas.height = 1;
     ctx.font = 'Bold 70px Arial'; ctx.textAlign = 'center';
     ctx.shadowColor = colorSet.glow; ctx.shadowBlur = 15; ctx.fillStyle = colorSet.text;
     ctx.fillText(text, 256, 80);
